@@ -15,9 +15,54 @@
 	<artifactId>xml</artifactId>
 
 	<packaging>jar</packaging>
-	
+
+	<properties>
+
+		<com.helger.version>6.1.1</com.helger.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- Generic maven para la libreria general -->
+		<dependency>
+			<groupId>com.helger</groupId>
+			<artifactId>ph-ubl-parent-pom</artifactId>
+			<version>${com.helger.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+
+		<!-- Libreria para leer y escribir documentos ubl -->
+		<dependency>
+			<groupId>com.helger</groupId>
+			<artifactId>ph-ubl21</artifactId>
+			<version>${com.helger.version}</version>
+		</dependency>
 
 
+		<!-- Libreria con los enums -->
+		<dependency>
+			<groupId>com.helger</groupId>
+			<artifactId>ph-ubl21-codelists</artifactId>
+			<version>${com.helger.version}</version>
+		</dependency>
+
+
+		<!-- Libreria para peru -->
+		<dependency>
+			<groupId>com.helger</groupId>
+			<artifactId>ph-ubl21-codelists</artifactId>
+			<version>${com.helger.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.helger</groupId>
+			<artifactId>ph-ublpe</artifactId>
+			<version>${com.helger.version}</version>
+		</dependency>
+
+
+	</dependencies>
 
 </project>
 
