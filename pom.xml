@@ -23,6 +23,7 @@
 	<modules>
 		<module>base</module>
 		<module>xml</module>
+		<module>bobcitobo</module>
 	</modules>
 
 </project>
