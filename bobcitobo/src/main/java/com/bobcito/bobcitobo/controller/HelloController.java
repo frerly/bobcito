@@ -3,11 +3,14 @@ package com.bobcito.bobcitobo.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class HelloController {
 
-	@RequestMapping("/")
+	@RequestMapping(value="/")
 	public String index() {
-		return "Hello";
+		return "Greetings from Spring Boot!";
 	}
+	
+
 }

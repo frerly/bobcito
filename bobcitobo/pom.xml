@@ -14,24 +14,13 @@
 
 	<artifactId>bobcitobo</artifactId>
 
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
-		<org.springframework.boot>2.1.4.RELEASE</org.springframework.boot>
+
 
 	</properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${org.springframework.boot}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,15 +31,14 @@
 	<build>
 		<plugins>
 			<plugin>
-				<dependencies>
-					<dependency>
-						<groupId>org.springframework.boot</groupId>
-						<artifactId>spring-boot-maven-plugin</artifactId>
-					</dependency>
-				</dependencies>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
+	
+	
+	
 
 </project>
 
